@@ -1,0 +1,24 @@
+.hero-section {
+    background-image: url('/public/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* Hace que ocupe toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Asegura que el texto sea legible */
+    text-align: center;
+}
+
+.hero-text {
+    color: #000000;
+    font-weight: normal;
+    /* Color amarillo, cámbialo por el que prefieras */
+}
+
+.active {
+    color: #7869ff;
+    font-weight: bold;
+}
