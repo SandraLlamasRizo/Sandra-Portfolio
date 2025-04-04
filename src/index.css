@@ -1,15 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    z-index: 10;
+}
+
 .hero-section {
     background-image: url('/public/Background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: calc(100vh - 80px);
     /* Hace que ocupe toda la pantalla */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     /* Asegura que el texto sea legible */
     text-align: center;
+    position: relative;
+    z-index: -10;
+    margin-top: 80px;
 }
 
 .hero-text {
@@ -19,6 +28,17 @@
 }
 
 .active {
-    color: #7869ff;
+    color: #7d6fff;
     font-weight: bold;
+}
+
+.purple {
+    background-color: #7d6fff;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer {
+    position: relative;
 }

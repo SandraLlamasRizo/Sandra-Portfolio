@@ -1,15 +1,18 @@
+import TiltedCard from "../Cards/TiltedCard/TiltedCard";
+import ScrollFloat from "../TextAnimations/ScrollFloat/ScrollFloat";
+import RotatingText from "../TextAnimations/RotatingText/RotatingText";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+
 function Home() {
     
     return <>
-        <section className="hero-section">
-      <div className="container">
-          <div className="col-10 col-md-8 col-lg-6">
-                <p className="lead active">Frontend Developer | UX/UI Designer</p>
-                <h1 className="display-5 hero-text">Hi, I'm San! </h1>
-                <p className="display-6">Bringing ideas to life through code & design✨</p>
-          </div>
-      </div>
-    </section>
+        <div className="mx-2 mx-xl-5 px-xl-5">
+        <Hero />
+        <Projects/>
+
+        </div>
+        
     </>
 }
 
