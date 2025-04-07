@@ -4,21 +4,21 @@ import CircularText from "../TextAnimations/CircularText/CircularText";
 function Header() {
     
     return <div className=" header">
-        <header className="container-lg d-flex flex-lg-row flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-0 border-bottom gap-3 container-fluid">
-        <div>
+        <header className="mx-auto flex lg:flex-row flex-wrap items-center justify-center md:justify-between py-4 mb-0 border-b gap-3 px-4">
+        <div className="flex-1 w-fit">
             <CircularText text="SAN*WEB*DEV*"
                 onHover="speedUp"
                 spinDuration={20}
                 className="custom-class" />
         </div>
-        <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li className="nav-item"> <a className="nav-link active">Portfolio</a></li>
-            <li className="nav-item"> <a className="nav-link link-dark">Projects</a></li>
-            <li className="nav-item"> <a className="nav-link link-dark">About</a></li>
-            <li className="nav-item"> <a className="nav-link link-dark">Resume</a></li>
+        <ul className="flex-1 flex flex-wrap flex-row justify-center content-center gap-4">
+            <li> <a className="text-lg font-medium text-gray-600 hover:text-purple-500 cursor-pointer active">Portfolio</a></li>
+            <li> <a className="text-lg font-medium text-gray-600 hover:text-purple-500 cursor-pointer ">Projects</a></li>
+            <li> <a className="text-lg font-medium text-gray-600 hover:text-purple-500 cursor-pointer ">About</a></li>
+            <li> <a className="text-lg font-medium text-gray-600 hover:text-purple-500 cursor-pointer ">Resume</a></li>
         </ul>
-        <div className="col-md-auto text-end">
-            <button type="button" className="btn btn-outline-dark me-2">Let's talk</button>
+        <div className="flex-1 text-center">
+            <button type="button" className="border border-gray-600 text-gray-600 px-4 py-2 rounded hover:bg-black hover:text-white transition cursor-pointer">Let's talk</button>
         </div>
     </header>
     </div>

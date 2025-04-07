@@ -1,31 +1,31 @@
-import TiltedCard from "../Cards/TiltedCard/TiltedCard";
+
 
 function Projects() {
     
     return <>
-        <section className="projects-section p-4 mx-5">
-            <h1 className="display-2 fw-bold">PROJECTS</h1>
-            <img src="../" alt="" />
-            <section className="projects-grid">
-                {/* <TiltedCard
-                    imageSrc="/Sandra-Portfolio/CRM-people.png"
-                    altText="CRM people"
-                    captionText="CRM people"
-                    containerHeight="auto"
-                    containerWidth="auto"
-                    imageHeight="200px"
-                    imageWidth="300px"
-                    rotateAmplitude={12}
-                    scaleOnHover={1.2}
-                    showMobileWarning={false}
-                    showTooltip={true}
-                    displayOverlayContent={true}
-                    overlayContent={
-                    <p className="tilted-card-demo-text">
-                        CRM people - frontend developer
-                    </p>
-                    }
-                /> */}
+        <section className="min-h-screen flex flex-col items-start px-4 py-10">
+            <h1 className="text-4xl font-bold mb-10 text-start">PROJECTS</h1>
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
+                <div className="relative rounded-lg overflow-hidden shadow-lg">
+                    <img src="/Sandra-Portfolio/CRM-people" className="w-full h-64 object-cover" alt="..."/>
+                    <div className="absolute inset-0 bg-black bg-opacity-50 text-white p-6 flex flex-col justify-end">
+                        <h5 className="text-2xl font-bold">CRM-people</h5>
+                        <p className="text-sm">Frontend developer</p>
+                        <p className="text-xs"><small>REACT - JavaScript</small></p>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
             </section>
             
         </section>

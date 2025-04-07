@@ -4,25 +4,22 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     
-    return <div className="container footer">
-        <footer className="d-flex flex-wrap flex-row justify-content-between align-items-center py-1 border-top">
-            <p className="col-md-4 mb-0 text-body-secondary">portfolio de San</p>
-            <div className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+    return  <footer className="footer w-full px-4 py-6 text-center flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-gray-500">portfolio de San</p>
+            <div className="flex items-center justify-center">
                 <CircularText text="SAN*WEB*DEV*"
                     onHover="speedUp"
                     spinDuration={20}
                     className="custom-class" />
             </div>
-            <ul className="nav col-md-4 justify-content-end">
-                <li className="nav-item"><a className="nav-link px-2 text-body-secondary"><AwesomeIcon icon={faLinkedinIn} /></a></li>
-                <li className="nav-item"><a className="nav-link px-2 text-body-secondary"><AwesomeIcon icon={faGithub
+            <ul className="flex justify-center gap-4">
+                <li><a className="text-gray-500 hover:text-black"><AwesomeIcon icon={faLinkedinIn} /></a></li>
+                <li><a className="text-gray-500 hover:text-black"><AwesomeIcon icon={faGithub
                 } /></a></li>
-                <li className="nav-item"><a className="nav-link px-2 text-body-secondary">About</a></li>
-                <li className="nav-item"><a className="nav-link px-2 text-body-secondary">Contact</a></li>
+                <li><a className="text-gray-500 hover:text-black cursor-pointer">About</a></li>
+                <li><a className="text-gray-500 hover:text-black cursor-pointer">Contact</a></li>
             </ul>
     </footer>
-
-    </div>
 }
 
 export default Footer;

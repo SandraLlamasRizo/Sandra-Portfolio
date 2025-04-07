@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 function Home() {
     
     return <>
-        <div className="mx-2 mx-xl-5 px-xl-5">
+        <div className="flex flex-col min-h-screen">
         <Hero />
         <Projects/>
 
