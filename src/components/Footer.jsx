@@ -4,7 +4,7 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     
-    return  <footer className="footer w-full px-4 py-6 text-center flex flex-col md:flex-row items-center justify-between gap-6">
+    return  <footer className="footer w-full lg:max-w-7/10 m-auto px-4 py-6 text-center flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-gray-500">portfolio de San</p>
             <div className="flex items-center justify-center">
                 <CircularText text="SAN*WEB*DEV*"
